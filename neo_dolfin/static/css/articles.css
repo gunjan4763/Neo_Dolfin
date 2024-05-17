@@ -5,23 +5,21 @@
 
 #articleTitle {
     font-weight: bolder;
-    font-size: 72px;
+    font-size: 3.5rem; /* Adjust font size for responsiveness */
     color: #0077bb;
     text-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
 }
 
 #articleDate {
     font-weight: bold;
-    margin-top: 7%;
-    padding-bottom: 0%;
+    margin-top: 2%;
     color: #343A40;
 }
 
 
 /* First Block */
-#p1 {
-    font-size: 24px;
-    font-weight: bold;
+#p1, #p2 {
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
     color: #343A40;
 }
 
@@ -29,101 +27,37 @@
     padding-top: 25px;
 }
 
-#articleImg {
-    border-radius: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-    #articleImg {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #articleImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }
-}
-
-
 /* Second Block */
-#p2 {
-    padding-top: 25px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #343A40;
-}
-
-/* Third Block */
-#secondSection {
-    padding-top: 25px;
-}
-
-#p3 {
-    margin-left: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #343A40;
-}
-
-#quoteText {
-    color: #fafaff;
-    text-align: center;
-    font-style: italic;
-    padding-top: 20%;
-}
-
-#quoteText2 {
+#quoteText, #quoteText2 {
     color: #fafaff;
     text-align: center;
     font-style: italic;
 }
 
-#quoteBackground {
+.quote-container {
     background-image: url("/static/img/quoteBG.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
-    height: 325px;
+    background-size: contain; /* Adjust background size for responsiveness */
+    height: 270px; /* Adjust height for responsiveness */
+    padding: 20px; /* Add padding for better readability */
 }
 
-@media only screen and (max-width: 992px) {
-    #quoteBackground {
-        background-size: 100%;
-        height: 270px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #quoteBackground {
-        background-size: 70%;
-        height: 270px;
-        margin-bottom: 5%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #quoteBackground {
-        background-size: 100%;
-        height: 290px;
-        margin-bottom: 5%;
-    }
-    #quoteText {
-        color: #fafaff;
-        text-align: center;
-        font-style: italic;
-        padding-top: 30%;
-    }
-}
-
-/* Fourth Block */
-#p4 {
-    padding-top: 2%;
-    padding-bottom: 75px;
-    font-size: 24px;
-    font-weight: bold;
+/* Third Block */
+#p3, #p4 {
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
     color: #343A40;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .quote-container {
+        height: 325px; /* Adjust height for responsiveness */
+    }
+}
+
+@media (min-width: 992px) {
+    .quote-container {
+        height: 370px; /* Adjust height for responsiveness */
+    }
 }

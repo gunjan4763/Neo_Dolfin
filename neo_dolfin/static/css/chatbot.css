@@ -12,17 +12,20 @@ body {
 }
 
 .chatbox {
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
 }
 
 .chatbox__support {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     display: flex;
     flex-direction: column;
     background: #eee;
     width: 350px;
-    height: 450px;
+    max-width: 350px; /* Added max-width for smaller screens */
     z-index: -123456;
     opacity: 0; 
     border-radius: 20px;

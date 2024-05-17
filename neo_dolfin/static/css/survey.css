@@ -5,17 +5,30 @@
     border: 0.5px solid black;
     margin-top: 20px;
     border-radius: 30px;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .dashboard-question {
     display: flex;
     justify-content: left;
     padding-left: 30px;
+    margin-top: 10px; /* Added margin-top for better spacing */
 }
 
 label {
-    padding: 0px 10px 0px 10px;
-    font-size: 24px;
+    padding: 0px 10px; /* Adjusted padding for better alignment */
+    font-size: 1rem; /* Changed font size to use relative unit */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .popup {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+    
+    .dashboard-question {
+        padding-left: 10px; /* Adjusted padding for smaller screens */
+    }
 }
 
 .faces {

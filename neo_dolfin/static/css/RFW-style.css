@@ -2,20 +2,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 2vw; /* Adjust padding using viewport width units */
 }
 
 .survey_content {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 90%; /* Set maximum width to 90% of the viewport */
+    margin: 2vw auto; /* Center content with margin in viewport width units */
     background: #fff;
-    padding: 20px;
+    padding: 4vw; /* Adjust padding using viewport width units */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
     color: #333;
+    font-size: 2.5vw; /* Adjust font size using viewport width units */
 }
 
 table {
@@ -25,7 +26,7 @@ table {
 
 th, td {
     text-align: left;
-    padding: 8px;
+    padding: 1vw; /* Adjust padding using viewport width units */
     border: 1px solid #ddd;
 }
 
@@ -34,17 +35,17 @@ th {
 }
 
 input[type="checkbox"] {
-    margin-left: 5px;
+    margin-left: 1vw; /* Adjust margin using viewport width units */
 }
 
 button {
     background: #5cb85c;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 2vw 4vw; /* Adjust padding using viewport width units */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2vw; /* Adjust font size using viewport width units */
     display: block;
     width: 100%;
 }
@@ -53,4 +54,22 @@ button:hover {
     background: #4cae4c;
 }
 
-   
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .survey_content {
+        padding: 6vw; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+
+    th, td {
+        padding: 2vw; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        padding: 3vw 6vw; /* Adjust padding for smaller screens */
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+}
